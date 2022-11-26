@@ -1,0 +1,424 @@
+/*RESET*/
+body,ul,li,p{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/*FIM RESET*/
+
+/*INICIO HEADER*/
+.header-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f1f1;;
+}
+.logo-imagem{
+    padding: 20px;
+}
+.field{
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.search{
+    background-image: url(../imagens/logosearch.png);
+    background-size: 9%;
+    background-position: 95%;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 300px;
+    border: none;
+}
+/*FIM HEADER*/
+
+/*INICIO MAIN DISPLAY*/
+.initial-main{
+    height: 54.5rem;
+    width: 100%;
+    background-image: url(../imagens/london.jpg);
+    background-size: cover;
+}   
+.menu-main{
+    justify-content: center;
+    height: 37%;
+    background-color:white;
+    align-items: center;
+    width: 70%;
+    display: inline-block;
+    margin-left:15%;
+    margin-top: 15%;
+}
+.menus{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    background-color: black;
+    font-size: 20px;
+    text-align: center;
+
+}
+.menu-main li:nth-child(n):hover{
+    background-color: orangered;
+    padding: 20px;
+    width: 33.3%;
+}
+
+.menu-main li{
+    background-color: black;
+    padding: 20px;
+    width: 33.3%;
+}
+.menu-main h3{
+    font-size: 25px;
+    margin-left: 20px;
+}
+.menu-main input{
+    margin-top: 10px;
+    padding: 10px; 
+    outline: none;
+    justify-content: space-between;
+    width: 100%;
+    width: 500px;
+}
+.menu-main button{
+    display: flex;
+    justify-content: right;
+    padding: 10px;
+    background-color: gray;
+    margin: 20px 20px auto;
+    color: white;
+}
+.menu-main button:hover{
+    background-color: orangered;
+}
+.menu-main label{
+    display: grid;
+    display: inline-grid;
+    gap:10px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+/*FIM MAIN DISPLAY*/
+
+/*INICIO Nav 5 Anuncios*/
+main{
+    background-color: #f1f1f1;
+}
+.titulo{
+    margin-left:8.06%;
+}
+.pnav{
+    margin-left:8.06%;
+    font-size: 15px;
+    margin-top: -15px;
+    margin-bottom: 20px; 
+}
+.cidades{
+    display: grid;
+    grid-template-columns:2fr 1fr 1fr;
+    margin: 0 auto;
+    grid-gap: 10px 10px;
+    align-items: center;
+    padding-left: 8.06%;
+    padding-right: 8.06%;
+}
+
+.cidades>div:nth-child(1){
+    grid-column: 1;
+    grid-row: 1/3;
+    display: grid;
+}
+
+.cidades>div:nth-child(n+2){
+    display: grid;
+}
+.anuncio img{
+    grid-column: 1;
+    grid-row: 1/3;
+    align-self: end;
+    width: 100%;
+    display: block;
+}
+.anuncios4 img{
+    grid-column: 1;
+    grid-row: 1/3;
+    align-self:end;
+    width: 100%;
+    display: block;
+}
+
+.anuncio p{
+    background:rgba(0, 0, 0,0);
+    padding: 10px;
+    color:white;
+    grid-column: 1;
+    grid-row: 2;
+    align-self: end;
+    font-size: 20px;
+}
+.anuncios4 p{
+    background:rgba(0, 0, 0,0);
+    padding: 10px;
+    color:white;
+    grid-column: 1;
+    grid-row: 2;
+    align-self: end;
+    font-size: 20px;
+}
+
+/*FIM Nav 5 Anuncios*/
+
+/*INICIO 2 Anuncios*/
+.pnav2{
+    margin-left: 8.06%;  
+}
+.twoanuncios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+.twoimg{
+    display:inline-table;
+    width: 41.5%; 
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 5px;
+    height: 30rem;
+}
+
+.pprice{
+    color: #666666;
+}
+.twoimg a{
+    color: inherit;
+}
+.twoimg a:hover{
+    color: #666666;
+}
+.twoimg h3{
+    display: flex;
+    margin-left: 10px;
+    padding: 5px;
+}
+.twoimg p{
+    display: flex;
+    margin-left: 10px;
+    padding: 5px;
+}
+.twoimg a{
+    display: flex;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.twoimg img{
+    width: 100%;
+    display: block;
+}
+/*FIM 2 Anuncios*/
+
+/*INICIO Field Subscribe*/
+.subsfield{
+    background-color: grey;
+    height: 250px;
+    width: 84%;
+    margin-left: 8.06%;
+    margin-right: 8.06%;
+    color: white;
+}
+.subsfield h3{
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    margin-left: 20px;
+    padding-top: 25px;
+    font-size: 25px;
+}
+.subsfield p{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.email-subs{
+    padding: 10px;
+    width: 90%;
+    display: flex;
+    margin-left: 20px;
+    outline: none;
+}
+.subsfield label{
+    margin-left: 20px; 
+}
+.button-subs{
+    background-color: rgb(236, 102, 102);
+    width: 10%;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 10px;
+    color: white;
+    border:none
+}
+.button-subs:hover{
+    background-color: rgb(248, 53, 53);
+}
+/*Fim Field Subscribe*/
+
+/*Inicio Footer*/
+footer{
+    background-color: #f1f1f1;   
+}
+.contact{
+    padding-top: 20px;  
+}
+.contacts{
+    display: flex;
+    flex-flow: column;
+}
+.contacts a{
+    padding: 0!important;
+    margin-left: 8.06%!important;
+    margin-right: 8.06%!important;
+    font-size: 15px;
+}
+.contacts h3{
+    font-size: 25px!important;
+    padding: 0!important;
+    margin-left: 8.06%;
+    margin-top: 5px;
+}
+.contacts p{
+    margin-bottom: 10px;
+    padding: 0!important;
+    margin-left: 8.06%;
+    margin-top: 5px;
+    font-size: 15px;
+}
+.contacts img{
+    margin-right: 20px;
+}
+.icon-email{
+    margin-bottom: -5px;
+    margin-left: -2px;
+    margin-right: 10px!important;
+}
+.field-inputs{
+    display: flex;
+    flex-flow: column;
+    margin-left: 8.06%
+}
+.field-inputs input{
+    width: 90.5%;
+    padding-top: 20px;
+    margin-top: 20px;
+    outline: none;
+}
+.field-inputs button{
+    width: 10%;
+    padding:10px;
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    border:none;
+    font-size: 13px;
+}
+.field-inputs button:hover{
+    background-color: orangered;
+}
+/*Fim Footer Contacts*/
+
+.end-footer{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+    color: #aaaaaa;
+    font-weight: 400;
+}
+.sociais-icons{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    gap: 5px;
+}
+
+@media all and (max-width:1700px){
+    .menu-main input{
+        width: 300px;
+    }    
+}
+@media all and (max-width:1100px){
+    .menu-main input{ 
+        width: 210px;
+    } 
+}
+
+@media all and (max-width:768px){
+    .menu-main input{
+        width: 150px;
+    }
+}
+@media all and (max-width:550px){
+    .menu-main{
+        width: 100%;
+        margin: 0 auto;
+        height:400px
+    }
+    .initial-main{
+        background-image: none;
+       height: 40%;
+    } 
+    .menu-main input{
+        width: 400px;
+       padding-left: 20px;
+       
+    }
+    .menu-main label{
+        margin-left: 6%;
+        margin-top: 10px;
+    }
+    .menu-main button{
+        justify-content: center;
+        margin: 3% 6%;
+        width: 40%;
+    }
+    .cidades{
+        display: flex;
+        flex-direction: column;
+        padding-left: 8.06%;
+        padding-right: 8.06%;
+    }
+ 
+    .twoanuncios{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .twoimg{
+        width: 85%; 
+        margin: 0 auto;
+        height: 25rem;
+        margin-top: 3%;
+    }
+    .email-subs{
+        width: 85%;
+    }
+    .button-subs{
+        width: 30%;
+        height: 35px;
+        margin-left: 20px;
+    }
+    .field-inputs button{
+        width: 30%;
+    }
+    .field-inputs input{
+        width: 89%;
+    }
+
+}
